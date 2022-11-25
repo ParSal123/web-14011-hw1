@@ -18,11 +18,12 @@ const config = {
   devServer: {
     open: true,
     host: "localhost",
-    watchFiles: ['index.html']
+    watchFiles: ['src/**/index.html'],
+    static: ['src/mainpage/static', 'src/static']
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "index.html",
+      template: "src/mainpage/index.html",
     }),
 
     // Add your plugins here
