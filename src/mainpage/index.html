@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"
-    />
-    <title>هواپیمایی ماهان</title>
-  </head>
-  <body>
-    <header class="fixed z-10 w-screen">
-      <div class="max-w-7xl flex m-auto px-3 justify-between items-center">
-        <a href="." class="py-3.5">
-          <img src="img/mahan-logo.svg" alt="Mahan Logo" class="w-32 sm:w-40" />
-        </a>
-        <button
-          type="button"
-          class="rounded-lg border-white px-9 py-2.5 whitespace-nowrap border-solid border text-white h-fit hover:text-black hover:bg-white transition-all max-sm:hidden"
-        >
-          ورود/ثبت نام
-        </button>
-        <span class="sm:hidden">
-          <span class="fa-solid fa-arrow-right-to-bracket text-white text-2xl"></span>
-        </span>
-      </div>
-    </header>
-    <main>
-      <img src="img/home-banner.jpg" alt="Banner Picture" />
-    </main>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta
+    content="initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width"
+    name="viewport"
+  />
+  <title>هواپیمایی ماهان</title>
+</head>
+<body>
+<header class="fixed z-10 w-screen">
+  <div class="max-w-7xl flex m-auto px-3 justify-between items-center">
+    <a class="py-3.5" href=".">
+      <img alt="Mahan Logo" class="w-32 sm:w-44" src="img/mahan-logo.svg" />
+    </a>
+    <div class="flex items-center">
+      <button
+        class="rounded-lg border-white px-9 py-2.5 whitespace-nowrap border-solid border text-white h-fit hover:text-black hover:bg-white transition-all max-sm:hidden"
+        type="button"
+      >
+        ورود/ثبت نام
+      </button>
+      <label class="w-16 h-8 cursor-pointer mx-10">
+        <input class="hidden" id="darkModeSwitch" type="checkbox" />
+        <span
+          class="w-full h-full bg-gray-200/75 transition duration-300 shadow-inner flex items-center justify-around
+            rounded-full relative dark:bg-gray-700/75
+            before:transition-all before:duration-300 before:w-7 before:h-7 before:absolute before:top-0.5
+            before:right-0.5 before:bg-white before:inline-block before:rounded-full
+            dark:before:bg-black dark:before:right-[calc(100%_-_theme(spacing[0.5]))] dark:before:translate-x-full
+            active:before:w-9">
+        <span
+          class="fa-solid fa-sun text-amber-400 text-xl pl-0.5 text-white z-20"></span>
+        <span class="fa-solid fa-moon dark:text-white text-2xl z-20"></span>
+      </span>
+      </label>
+      <span class="sm:hidden flex">
+          <span
+            class="fa-solid fa-arrow-right-to-bracket text-white text-2xl"
+          ></span>
+      </span>
+    </div>
+  </div>
+</header>
+<main>
+  <img alt="Banner Picture" src="img/home-banner.jpg" />
+</main>
+</body>
 </html>
